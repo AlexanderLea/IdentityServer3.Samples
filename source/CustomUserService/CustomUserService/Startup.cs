@@ -25,8 +25,8 @@ namespace SampleApp
             app.Map("/core",
                 coreApp =>
                 {
-                    //coreApp.Use<IdentityServerWithTenantSwitchingMiddleware>(coreApp.Properties);
-                    coreApp.UseIdentityServer(new IdentityServerWithTenantSwitchingMiddleware(null, null).GetOptions());
+                    coreApp.Use<IdentityServerWithTenantSwitchingMiddleware>(coreApp.Properties);
+                   // coreApp.UseIdentityServer(new IdentityServerWithTenantSwitchingMiddleware(null, null).GetOptions());
                 });
         }
     }
