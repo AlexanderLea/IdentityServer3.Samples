@@ -20,6 +20,7 @@
     <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
     <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
     <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -207,6 +208,7 @@
     <Compile Include="Controllers\RegisterFirstExternalRegistrationController.cs" />
     <Compile Include="Controllers\LocalRegistrationController.cs" />
     <Compile Include="Controllers\ExternalRegistrationController.cs" />
+    <Compile Include="Middleware\IdentityServerWithTenantSwitchingMiddleware.cs" />
     <Compile Include="RegisterFirstExternalRegistrationUserService.cs" />
     <Compile Include="LocalRegistrationUserService.cs" />
     <Compile Include="Global.asax.cs">
